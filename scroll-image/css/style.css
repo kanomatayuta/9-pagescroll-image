@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* 全体レイアウト
+--------------------------------------- */
+.title{
+  margin-top: 5px;
+  text-align: center;
+}
+.box-inner{
+  max-width: 800px;
+  margin: 500px auto;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background-color:lightblue;
+  margin: 500px auto 0;
+  position: relative;
+}
+.box:first-child{
+  margin-top: 0;
+}
+.box-num{
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /*Chrome, Safari対応*/
+    -ms-transform: translate(-50%, -50%); /*Firefox対応*/
+}
+
+.fade-in {
+  opacity: 0;
+  transition-duration: 3000ms;/*トランジションの時間*/
+}
+
+.scroll-in {
+  opacity: 1;
+}
